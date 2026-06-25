@@ -4,7 +4,7 @@ public class BoardProtocol {
         StringBuilder sb = new StringBuilder();
 
         for (int i = 0; i < 9; i++) {
-            sb.append(board.getCells(i));
+            sb.append(board.getCell(i));
         }
 
         return sb.toString();
