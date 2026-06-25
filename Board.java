@@ -11,9 +11,9 @@ public class Board {
         return cells[index] == 0;
     }
 
-    public void setCell(int i, int mark) {
+    public void setCell(int index, int mark) {
 
-        cells[i] = mark;
+        cells[index] = mark;
     }
 
     public boolean isFull() {
