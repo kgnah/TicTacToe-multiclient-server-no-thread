@@ -1,19 +1,19 @@
 public class Board {
     private int[] cells = new int[9];
 
-    public int getCells(int index) {
+    public int getCell(int index) {
 
-        return cells[index];
+        return cell[index];
     }
 
     public boolean isFree(int index) {
 
-        return cells[index] == 0;
+        return cell[index] == 0;
     }
 
     public void setCell(int i, int mark) {
 
-        cells[i] = mark;
+        cell[i] = mark;
     }
 
     public boolean isFull() {
@@ -32,7 +32,7 @@ public class Board {
         };
 
         for (int[] w : win) {
-            if (cells[w[0]] == player && cells[w[1]] == player && cells[w[2]] == player)
+            if (cell[w[0]] == player && cell[w[1]] == player && cell[w[2]] == player)
                 return true;
         }
         return false;
