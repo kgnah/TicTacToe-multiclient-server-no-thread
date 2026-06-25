@@ -3,17 +3,17 @@ public class Board {
 
     public int getCell(int index) {
 
-        return cell[index];
+        return cells[index];
     }
 
     public boolean isFree(int index) {
 
-        return cell[index] == 0;
+        return cells[index] == 0;
     }
 
     public void setCell(int i, int mark) {
 
-        cell[i] = mark;
+        cells[i] = mark;
     }
 
     public boolean isFull() {
@@ -32,7 +32,7 @@ public class Board {
         };
 
         for (int[] w : win) {
-            if (cell[w[0]] == player && cell[w[1]] == player && cell[w[2]] == player)
+            if (cells[w[0]] == player && cells[w[1]] == player && cells[w[2]] == player)
                 return true;
         }
         return false;
